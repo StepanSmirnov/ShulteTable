@@ -14,7 +14,10 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void onHelpClick(View view) {
-        Intent intent = new Intent(this, HelpActivity.class);
-        startActivity(intent);
+        startActivity(new Intent(this, HelpActivity.class));
+    }
+
+    public void onGameClick(View view) {
+        startActivity(new Intent(this, GameActivity.class));
     }
 }
